@@ -29,6 +29,8 @@ case TAPESIZE in
     ;;
   *)
     echo "Invalid tapesize specified. Supported values are 3.5, 6, 9, 12, 18 and 24"
+    exit 1
+    ;;
 esac
 
 python3 -m http.server 8000
