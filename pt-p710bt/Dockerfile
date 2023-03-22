@@ -14,12 +14,9 @@ RUN apk add --no-cache \
     libbluetooth3 \
     imagemagick \
     sed
-
-RUN git clone https://github.com/SkoZombie/pt-p710bt-label-maker
+RUN pip3 intstall -r requirements.txt
+RUN git clone https://github.com/jaymemaurice/pt-p710bt-label-maker
 WORKDIR ./pt-p710bt-label-maker
-
-WORKDIR /root
-COPY --from=builder /build/root/ /
 
 # Run script
 COPY run.sh /

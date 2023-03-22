@@ -1,0 +1,29 @@
+name: "pt-pt710bt Label Maker add-on"
+description: "Unofficial add-on to print labels to brother bluetooth label maker"
+version: "0.0.1"
+slug: "pt-p710bt"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: before
+ports:
+  8000/tcp: 8000
+options:
+  btaddress: EC:79:49:64:F6:B1
+  tapesize: 24
+  mqtt_broker: localhost
+  mqtt_port: 2883
+  mqtt_pass: 
+  mqtt_topic: pt-p710bt/EC:79:49:64:F6:B1
+schema:
+  btaddress: str
+  tapesize: int
+  mqtt_broker: str
+  mqtt_port: int
+  mqtt_pass: str
+  mqtt_topic: str
+
