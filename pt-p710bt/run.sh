@@ -32,5 +32,5 @@ case TAPESIZE in
     exit 1
     ;;
 esac
-
-python3 -m http.server 8000
+pwd
+python3 /root/pt-p710bt-label-maker/label_maker.py $BLUETOOTHADDRESS --broker $BROKER --port $PORT --password $PASSWORD --topic $TOPIC --pngheight $PNGHEIGHT
