@@ -25,7 +25,7 @@ schema:
   tapesize: int
   mqtt_broker: str
   mqtt_port: int
-  mqtt_user: "str?""
+  mqtt_user: "str?"
   mqtt_pass: "str?"
   mqtt_topic: str
 
